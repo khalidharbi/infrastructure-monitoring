@@ -13,9 +13,9 @@ This project sets up a basic infrastructure monitoring stack using Prometheus, G
 - RHEL9 (Linux OS)
 
 
-## ⚙️ Setup Overview
+## Setup Overview
 
-### 1. Node Exporter
+# Node Exporter
 Installed on monitored VMs:
 
 wget https://github.com/prometheus/node_exporter/releases/download/v*/node_exporter-*.linux-amd64.tar.gz
