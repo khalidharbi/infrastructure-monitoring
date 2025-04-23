@@ -18,11 +18,16 @@ This project sets up a basic infrastructure monitoring stack using Prometheus, G
 ### Node Exporter
 Installed on monitored VMs:
 
-wget https://github.com/prometheus/node_exporter/releases/download/v*/node_exporter-*.linux-amd64.tar.gz
+run this script node_exporter/node_exporter.sh
 
 ### Run Prometheus
-podman run -d --name prom -p 9090:9090 -v /home/student/prometheus:/etc/prometheus:Z prom/prometheus
+mkdir ~/prometheus
+podman run -d --name prom -p 9090:9090 -v ~/prometheus:/etc/prometheus:Z prom/prometheus
+access it in your web browser http://localhost:9090
+
 
 ### Run Grafana
 podman run -d --name grafana -p 3000:3000 grafana/grafana
+access it in your web browser http://localhost:9090
+
 
