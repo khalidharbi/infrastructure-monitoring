@@ -1,0 +1,14 @@
+
+1. Create bot via @BotFather
+
+2. Get Bot Token
+
+3. Get chat ID using this URL:
+
+https://api.telegram.org/bot<BOT_TOKEN>/getUpdates
+
+4. In Grafana:
+
+Settings → Contact points → Telegram → Add bot token + chat ID
+
+
