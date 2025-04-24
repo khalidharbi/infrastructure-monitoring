@@ -21,13 +21,14 @@ Installed on monitored VMs:
 run this script node_exporter/node_exporter.sh
 
 ### Run Prometheus
-mkdir ~/prometheus
-podman run -d --name prom -p 9090:9090 -v ~/prometheus:/etc/prometheus:Z prom/prometheus
-access it in your web browser http://localhost:9090
+mkdir ~/prometheus  
+put the prometheus/prometheus.yml file from this repo and edit it with your targets address  
+podman run -d --name prom -p 9090:9090 -v ~/prometheus:/etc/prometheus:Z prom/prometheus  
+access it in your web browser http://localhost:9090  
 
 
 ### Run Grafana
-podman run -d --name grafana -p 3000:3000 grafana/grafana
-access it in your web browser http://localhost:9090
+podman run -d --name grafana -p 3000:3000 grafana/grafana  
+access it in your web browser http://localhost:9090  
 
 
